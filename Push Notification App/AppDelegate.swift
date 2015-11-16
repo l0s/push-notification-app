@@ -11,36 +11,93 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // view
     var window: UIWindow?
 
+    // controller
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    // MARK: delegate methods
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
+    {
+        let readAction = UIMutableUserNotificationAction() // value type fail!
+        readAction.identifier = "READ_ACTION"
+        readAction.title = "Read"
+        readAction.activationMode = .Foreground
+        readAction.destructive = false
+        readAction.authenticationRequired = true
+
+        let ignoreAction = UIMutableUserNotificationAction()
+        ignoreAction.identifier = "IGNORE_ACTION"
+        ignoreAction.title = "Ignore"
+        ignoreAction.activationMode = .Background
+        ignoreAction.destructive = false
+        ignoreAction.authenticationRequired = false
+
+        let deleteAction = UIMutableUserNotificationAction()
+        deleteAction.identifier = "DELETE_ACTION"
+        deleteAction.title = "Delete"
+        deleteAction.activationMode = .Foreground
+        deleteAction.destructive = true
+        deleteAction.authenticationRequired = true
+
+        let category = UIMutableUserNotificationCategory()
+        category.identifier = "MESSAGE_CATEGORY"
+        category.setActions([ readAction, ignoreAction, deleteAction ], forContext: .Default )
+        category.setActions( [ readAction, ignoreAction ], forContext: .Minimal )
+
+        let notificationSettings = UIUserNotificationSettings( forTypes: [ .Alert, .Badge, .Sound ], categories: [ category ] )
+        application.registerForRemoteNotifications()
+        application.registerUserNotificationSettings(notificationSettings)
+
+        if let options = launchOptions
+        {
+            createAlert( options.description )
+        }
+
         return true
     }
 
-    func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    // MARK: Notification Delegates
+    func application( application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData ) {
+        NSLog( "deviceToken: %@", deviceToken );
     }
 
-    func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        NSLog( "unable to register for remote notifications: %@", error )
     }
 
-    func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        createAlert( userInfo.description )
     }
 
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [NSObject : AnyObject], completionHandler: () -> Void) {
+        guard let identifier = identifier else
+        {
+            completionHandler()
+            return
+        }
+        switch( identifier )
+        {
+            case "READ_ACTION":
+                createAlert( "Read" )
+                break;
+            case "IGNORE_ACTION":
+                break;
+            case "DELETE_ACTION":
+                createAlert( "Delete" )
+                break;
+            default:
+                break;
+        }
+        completionHandler()
     }
 
-    func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    // MARK: Internal
+    internal func createAlert( message:String )
+    {
+        let view = UIAlertView( title: "Push Notification", message: message, delegate: self, cancelButtonTitle: "Acknowledge")
+        view.show()
     }
-
 
 }
 
