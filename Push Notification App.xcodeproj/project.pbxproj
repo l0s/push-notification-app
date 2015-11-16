@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0711AB421BF972010091C775 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0711AB411BF972010091C775 /* libsqlite3.tbd */; };
+		0711AB441BF9720B0091C775 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0711AB431BF9720B0091C775 /* libz.tbd */; };
+		0711AB461BF972130091C775 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0711AB451BF972130091C775 /* SystemConfiguration.framework */; };
 		07F40BD91BF93609005E7B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F40BD81BF93609005E7B18 /* AppDelegate.swift */; };
 		07F40BDB1BF93609005E7B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F40BDA1BF93609005E7B18 /* ViewController.swift */; };
 		07F40BDE1BF93609005E7B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F40BDC1BF93609005E7B18 /* Main.storyboard */; };
@@ -14,6 +17,30 @@
 		07F40BE31BF93609005E7B18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F40BE11BF93609005E7B18 /* LaunchScreen.storyboard */; };
 		07F40BEE1BF93609005E7B18 /* Push_Notification_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F40BED1BF93609005E7B18 /* Push_Notification_AppTests.swift */; };
 		07F40BF91BF93609005E7B18 /* Push_Notification_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F40BF81BF93609005E7B18 /* Push_Notification_AppUITests.swift */; };
+		07F40C371BF96589005E7B18 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2B1BF96588005E7B18 /* AWSCore.framework */; };
+		07F40C381BF96589005E7B18 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2B1BF96588005E7B18 /* AWSCore.framework */; };
+		07F40C391BF96589005E7B18 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2C1BF96588005E7B18 /* AWSDynamoDB.framework */; };
+		07F40C3A1BF96589005E7B18 /* AWSDynamoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2C1BF96588005E7B18 /* AWSDynamoDB.framework */; };
+		07F40C3B1BF96589005E7B18 /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2D1BF96588005E7B18 /* AWSLambda.framework */; };
+		07F40C3C1BF96589005E7B18 /* AWSLambda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2D1BF96588005E7B18 /* AWSLambda.framework */; };
+		07F40C3D1BF96589005E7B18 /* AWSMobileAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2E1BF96588005E7B18 /* AWSMobileAnalytics.framework */; };
+		07F40C3E1BF96589005E7B18 /* AWSMobileAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2E1BF96588005E7B18 /* AWSMobileAnalytics.framework */; };
+		07F40C3F1BF96589005E7B18 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2F1BF96588005E7B18 /* AWSS3.framework */; };
+		07F40C401BF96589005E7B18 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C2F1BF96588005E7B18 /* AWSS3.framework */; };
+		07F40C411BF96589005E7B18 /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C301BF96588005E7B18 /* AWSSNS.framework */; };
+		07F40C421BF96589005E7B18 /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C301BF96588005E7B18 /* AWSSNS.framework */; };
+		07F40C431BF96589005E7B18 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C311BF96588005E7B18 /* AWSSQS.framework */; };
+		07F40C441BF96589005E7B18 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C311BF96588005E7B18 /* AWSSQS.framework */; };
+		07F40C451BF96589005E7B18 /* Amazon Software License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07F40C331BF96589005E7B18 /* Amazon Software License.txt */; };
+		07F40C461BF96589005E7B18 /* Amazon Software License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07F40C331BF96589005E7B18 /* Amazon Software License.txt */; };
+		07F40C471BF96589005E7B18 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C341BF96589005E7B18 /* AWSCognito.framework */; };
+		07F40C481BF96589005E7B18 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C341BF96589005E7B18 /* AWSCognito.framework */; };
+		07F40C491BF96589005E7B18 /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = 07F40C351BF96589005E7B18 /* NOTICE */; };
+		07F40C4A1BF96589005E7B18 /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = 07F40C351BF96589005E7B18 /* NOTICE */; };
+		07F40C4B1BF96589005E7B18 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C361BF96589005E7B18 /* LoginWithAmazon.framework */; };
+		07F40C4C1BF96589005E7B18 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F40C361BF96589005E7B18 /* LoginWithAmazon.framework */; };
+		07F40C521BF96621005E7B18 /* private.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07F40C511BF96621005E7B18 /* private.plist */; };
+		07F40C531BF96621005E7B18 /* private.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07F40C511BF96621005E7B18 /* private.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0711AB411BF972010091C775 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0711AB431BF9720B0091C775 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0711AB451BF972130091C775 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		07F40BD51BF93609005E7B18 /* Push Notification App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Notification App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F40BD81BF93609005E7B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F40BDA1BF93609005E7B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +77,19 @@
 		07F40BF41BF93609005E7B18 /* Push Notification AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Push Notification AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F40BF81BF93609005E7B18 /* Push_Notification_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push_Notification_AppUITests.swift; sourceTree = "<group>"; };
 		07F40BFA1BF93609005E7B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F40C2B1BF96588005E7B18 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		07F40C2C1BF96588005E7B18 /* AWSDynamoDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSDynamoDB.framework; sourceTree = "<group>"; };
+		07F40C2D1BF96588005E7B18 /* AWSLambda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSLambda.framework; sourceTree = "<group>"; };
+		07F40C2E1BF96588005E7B18 /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSMobileAnalytics.framework; sourceTree = "<group>"; };
+		07F40C2F1BF96588005E7B18 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		07F40C301BF96588005E7B18 /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = "<group>"; };
+		07F40C311BF96588005E7B18 /* AWSSQS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSQS.framework; sourceTree = "<group>"; };
+		07F40C331BF96589005E7B18 /* Amazon Software License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Amazon Software License.txt"; sourceTree = "<group>"; };
+		07F40C341BF96589005E7B18 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		07F40C351BF96589005E7B18 /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		07F40C361BF96589005E7B18 /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoginWithAmazon.framework; sourceTree = "<group>"; };
+		07F40C4D1BF96592005E7B18 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		07F40C511BF96621005E7B18 /* private.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = private.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +97,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0711AB461BF972130091C775 /* SystemConfiguration.framework in Frameworks */,
+				0711AB441BF9720B0091C775 /* libz.tbd in Frameworks */,
+				0711AB421BF972010091C775 /* libsqlite3.tbd in Frameworks */,
+				07F40C371BF96589005E7B18 /* AWSCore.framework in Frameworks */,
+				07F40C411BF96589005E7B18 /* AWSSNS.framework in Frameworks */,
+				07F40C3B1BF96589005E7B18 /* AWSLambda.framework in Frameworks */,
+				07F40C4B1BF96589005E7B18 /* LoginWithAmazon.framework in Frameworks */,
+				07F40C391BF96589005E7B18 /* AWSDynamoDB.framework in Frameworks */,
+				07F40C3D1BF96589005E7B18 /* AWSMobileAnalytics.framework in Frameworks */,
+				07F40C3F1BF96589005E7B18 /* AWSS3.framework in Frameworks */,
+				07F40C471BF96589005E7B18 /* AWSCognito.framework in Frameworks */,
+				07F40C431BF96589005E7B18 /* AWSSQS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +116,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F40C3C1BF96589005E7B18 /* AWSLambda.framework in Frameworks */,
+				07F40C4C1BF96589005E7B18 /* LoginWithAmazon.framework in Frameworks */,
+				07F40C421BF96589005E7B18 /* AWSSNS.framework in Frameworks */,
+				07F40C3A1BF96589005E7B18 /* AWSDynamoDB.framework in Frameworks */,
+				07F40C381BF96589005E7B18 /* AWSCore.framework in Frameworks */,
+				07F40C3E1BF96589005E7B18 /* AWSMobileAnalytics.framework in Frameworks */,
+				07F40C401BF96589005E7B18 /* AWSS3.framework in Frameworks */,
+				07F40C481BF96589005E7B18 /* AWSCognito.framework in Frameworks */,
+				07F40C441BF96589005E7B18 /* AWSSQS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +141,9 @@
 		07F40BCC1BF93609005E7B18 = {
 			isa = PBXGroup;
 			children = (
+				0711AB451BF972130091C775 /* SystemConfiguration.framework */,
+				0711AB431BF9720B0091C775 /* libz.tbd */,
+				0711AB411BF972010091C775 /* libsqlite3.tbd */,
 				07F40BD71BF93609005E7B18 /* Push Notification App */,
 				07F40BEC1BF93609005E7B18 /* Push Notification AppTests */,
 				07F40BF71BF93609005E7B18 /* Push Notification AppUITests */,
@@ -97,12 +164,15 @@
 		07F40BD71BF93609005E7B18 /* Push Notification App */ = {
 			isa = PBXGroup;
 			children = (
+				07F40C4D1BF96592005E7B18 /* Bridging-Header.h */,
+				07F40C2A1BF96588005E7B18 /* Frameworks */,
 				07F40BD81BF93609005E7B18 /* AppDelegate.swift */,
 				07F40BDA1BF93609005E7B18 /* ViewController.swift */,
 				07F40BDC1BF93609005E7B18 /* Main.storyboard */,
 				07F40BDF1BF93609005E7B18 /* Assets.xcassets */,
 				07F40BE11BF93609005E7B18 /* LaunchScreen.storyboard */,
 				07F40BE41BF93609005E7B18 /* Info.plist */,
+				07F40C511BF96621005E7B18 /* private.plist */,
 			);
 			path = "Push Notification App";
 			sourceTree = "<group>";
@@ -123,6 +193,32 @@
 				07F40BFA1BF93609005E7B18 /* Info.plist */,
 			);
 			path = "Push Notification AppUITests";
+			sourceTree = "<group>";
+		};
+		07F40C2A1BF96588005E7B18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07F40C2B1BF96588005E7B18 /* AWSCore.framework */,
+				07F40C2C1BF96588005E7B18 /* AWSDynamoDB.framework */,
+				07F40C2D1BF96588005E7B18 /* AWSLambda.framework */,
+				07F40C2E1BF96588005E7B18 /* AWSMobileAnalytics.framework */,
+				07F40C2F1BF96588005E7B18 /* AWSS3.framework */,
+				07F40C301BF96588005E7B18 /* AWSSNS.framework */,
+				07F40C311BF96588005E7B18 /* AWSSQS.framework */,
+				07F40C321BF96589005E7B18 /* extras */,
+				07F40C361BF96589005E7B18 /* LoginWithAmazon.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		07F40C321BF96589005E7B18 /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				07F40C331BF96589005E7B18 /* Amazon Software License.txt */,
+				07F40C341BF96589005E7B18 /* AWSCognito.framework */,
+				07F40C351BF96589005E7B18 /* NOTICE */,
+			);
+			path = extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +331,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F40C491BF96589005E7B18 /* NOTICE in Resources */,
 				07F40BE31BF93609005E7B18 /* LaunchScreen.storyboard in Resources */,
+				07F40C451BF96589005E7B18 /* Amazon Software License.txt in Resources */,
 				07F40BE01BF93609005E7B18 /* Assets.xcassets in Resources */,
+				07F40C521BF96621005E7B18 /* private.plist in Resources */,
 				07F40BDE1BF93609005E7B18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +344,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F40C4A1BF96589005E7B18 /* NOTICE in Resources */,
+				07F40C531BF96621005E7B18 /* private.plist in Resources */,
+				07F40C461BF96589005E7B18 /* Amazon Software License.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +460,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,6 +499,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -409,12 +513,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Push",
-					Notification,
-					App/Frameworks,
-					"$(PROJECT_DIR)/Push",
-					Notification,
-					App/Frameworks/extras,
+					"$(PROJECT_DIR)/$(PROJECT_NAME)/Frameworks/**",
 				);
 				INFOPLIST_FILE = "Push Notification App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -422,7 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.macasaet.ios.pushnotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -434,12 +533,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Push",
-					Notification,
-					App/Frameworks,
-					"$(PROJECT_DIR)/Push",
-					Notification,
-					App/Frameworks/extras,
+					"$(PROJECT_DIR)/$(PROJECT_NAME)/Frameworks/**",
 				);
 				INFOPLIST_FILE = "Push Notification App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -447,7 +541,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.macasaet.ios.pushnotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -536,6 +630,7 @@
 				07F40BFF1BF93609005E7B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07F40C001BF93609005E7B18 /* Build configuration list for PBXNativeTarget "Push Notification AppTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +639,7 @@
 				07F40C021BF93609005E7B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07F40C031BF93609005E7B18 /* Build configuration list for PBXNativeTarget "Push Notification AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +648,7 @@
 				07F40C051BF93609005E7B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
